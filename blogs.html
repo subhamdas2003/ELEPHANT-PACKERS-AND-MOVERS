@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Blogs - Packers & Movers</title>
+    <link rel="stylesheet" href="css/index.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="navbar-container"></div>
+
+    <section class="blog-header">
+        <h1>Moving Tips & Stories</h1>
+        <p>Our best blogs to help you through every stage of your relocation.</p>
+    </section>
+
+    <main class="blogs-section">
+
+        <!-- Blog Posts -->
+        <div class="blog-post">
+          <h2>How We Handle Fragile Items</h2>
+          <img src="images/img1.jpeg" alt="Fragile items">
+          <p>Delicate items like glassware and antiques are wrapped in bubble wrap, placed in padded crates, and secured separately. We take special care for each fragile item.</p>
+          <div class="blog-meta">Posted by Rajat Das | July 17, 2025</div>
+        </div>
+
+        <div class="blog-post">
+          <h2>Relocating Your Office Smoothly</h2>
+          <img src="images/img2.jpeg" alt="Office relocation">
+          <p>Office moving includes coordination with team leads, equipment tagging, and safe cabling. Our crew follows a checklist to ensure nothing is missed during the shift.</p>
+          <div class="blog-meta">Posted by Anita Paul | July 21, 2025</div>
+        </div>
+
+        <div class="blog-post">
+          <h2>Long Distance Move? Here's What to Do</h2>
+          <img src="images/img3.jpeg" alt="Truck on road">
+          <p>Start early, plan your budget, and trust a reliable moving company. Keep a moving folder and pack a survival kit for the journey. We'll take care of the rest.</p>
+          <div class="blog-meta">Posted by Sunil Mehra | July 24, 2025</div>
+        </div>
+
+        <div class="blog-post">
+          <h2>Why Choose Professional Movers</h2>
+          <img src="images/img4.jpeg" alt="Professional movers">
+          <p>Hiring experts ensures safety, speed, and insurance. We provide trained staff and dedicated managers to make your move effortless and organized.</p>
+          <div class="blog-meta">Posted by Meenal Kaur | July 28, 2025</div>
+        </div>
+
+        <!-- This container will be filled with blog posts by app.js -->
+        <div id="blog-posts-container">
+            <p>Loading posts...</p>
+        </div>
+
+        <!-- User Blog Submission Form (No Image Upload) -->
+        <section class="blog-submit-form">
+            <h2>Submit Your Blog</h2>
+            <form id="submit-blog-form">
+                <label for="authorName">Your Name</label>
+                <input type="text" id="authorName" name="authorName" required />
+
+                <label for="blogTitle">Blog Title</label>
+                <input type="text" id="blogTitle" name="blog-title" required />
+
+                <label for="blogContent">Blog Content</label>
+                <textarea id="blogContent" name="blog-content" rows="6" required></textarea>
+
+                <button type="submit">Submit for Review</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 PackMove. All rights reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script type="module" src="js/app.js"></script>
+
+    <!-- Toast Notification Container -->
+<div id="toast-notification" class="toast-notification"></div>
+
+</body>
+</html>

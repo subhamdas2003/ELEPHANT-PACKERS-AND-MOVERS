@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel - Elephant Movers</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="admin-header">
+        <div class="admin-header-content">
+            <h1>Admin Panel</h1>
+        </div>
+    </header>
+
+    <main class="admin-main wide-layout">
+        <!-- Quick Stats Section -->
+        <div class="admin-quick-stats">
+            <div class="stat-card">
+                <div class="stat-value" id="blog-count">0</div>
+                <div class="stat-label">Total Blogs</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" id="enquiry-count">0</div>
+                <div class="stat-label">Quote Enquiries</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" id="review-count">0</div>
+                <div class="stat-label">Total Reviews</div>
+            </div>
+            <!-- NEW: Stat card for contact messages -->
+            <div class="stat-card">
+                <div class="stat-value" id="contact-count">0</div>
+                <div class="stat-label">Contact Messages</div>
+            </div>
+        </div>
+
+        <!-- Section 1: Manage Blog -->
+        <section class="admin-section">
+            <h2>Manage Blog</h2>
+            <form id="add-blog-form">
+                <input type="text" id="title" placeholder="Post Title" required>
+                <textarea id="content" placeholder="Post Content" required></textarea>
+                <button type="submit">Add New Post</button>
+            </form>
+            <hr style="margin: 20px 0;">
+            <h3>Existing Blog Posts</h3>
+            <div id="blogs-list"></div>
+        </section>
+
+        <!-- Section 2: Customer Quote Enquiries -->
+        <section class="admin-section" id="customer-enquiries">
+            <h2>Customer Quote Enquiries</h2>
+            <div id="enquiries-list"></div>
+        </section>
+        
+        <!-- NEW: Section for Contact Us Messages -->
+        <section class="admin-section" id="contact-messages">
+            <h2>Contact Us Messages</h2>
+            <div id="contact-list-container"></div>
+        </section>
+
+        <!-- Section 3: Customer Reviews -->
+        <section class="admin-section" id="customer-reviews">
+            <h2>Customer Reviews</h2>
+            <div id="reviews-list"></div>
+        </section>
+    </main>
+
+    <footer class="admin-footer">
+        <p>&copy; 2025 Elephant Packers & Movers. Admin Panel</p>
+    </footer>
+
+    <script type="module" src="js/app.js"></script>
+
+<!-- Toast Notification Container -->
+<div id="toast-notification" class="toast-notification"></div>
+
+</body>
+</html>

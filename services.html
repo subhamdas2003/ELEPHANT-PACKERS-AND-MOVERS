@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services - Elephant Movers</title>
+    <!-- Link to your main CSS file -->
+    <link rel="stylesheet" href="css/index.css">
+    <!-- Link to Poppins font, consistent with index.html -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Persistent Popup -->
+    <div id="service-popup" class="service-popup">
+        <div class="popup-content">
+            <span class="close-popup">&times;</span>
+            <p id="popup-message"></p>
+        </div>
+    </div>
+
+    <!-- Navigation Bar (Consistent with index.html) -->
+    <div id="navbar-container"></div>
+
+    <!-- Main Content - Our Services Section (Consistent with index.html sections) -->
+    <section class="section" id="services-full">
+        <h2>Everything You Need for a Perfect Move</h2>
+        <p>At Elephant Movers, we offer a comprehensive suite of services designed to make your relocation seamless and stress-free. From meticulous packing to secure transportation and efficient unpacking, we handle every detail with utmost care.</p>
+
+        <div class="services-grid">
+            <div>
+                <!-- Service 1 -->
+                <div class="service-item">
+                    <h4>Residential Moving</h4>
+                    <p>Whether you're moving to a new apartment or a large family home, we provide a seamless door-to-door service.</p>
+                </div>
+                 <!-- Service 2 -->
+                <div class="service-item">
+                    <h4>Commercial Moving</h4>
+                    <p>We specialize in relocating offices, retail stores, and warehouses with minimal disruption to your operations.</p>
+                </div>
+            </div>
+            <div>
+                <!-- Service 3 -->
+                <div class="service-item">
+                    <h4>Long-Distance Moving</h4>
+                    <p>Moving across the state or country? Our long-distance moving services ensure your belongings arrive safely and on time.</p>
+                </div>
+                 <!-- Service 4 -->
+                <div class="service-item">
+                    <h4>Packing & Unpacking</h4>
+                    <p>Save time and protect your items with our professional packing services, using top-quality materials.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section contact" id="service-enquiry">
+        <h2>Request a Detailed Quote</h2>
+        <p>Fill out the form below for a personalized quote based on your specific moving needs.</p>
+        
+        <!-- This is the new, detailed enquiry form -->
+        <form id="service-enquiry-form">
+            <input type="text" id="fullName" placeholder="Full Name" required>
+            <input type="email" id="email" placeholder="Email Address" required>
+            <input type="tel" placeholder="Enter 10 digit Phone Number" id="phone" required pattern="[0-9]{10}" maxlength="10">
+            <input type="text" id="movingFrom" placeholder="Moving From (City, Address)" required>
+            <input type="text" id="movingTo" placeholder="Moving To (City, Address)" required>
+            <input type="date" id="movingDate" placeholder="Preferred Moving Date" required>
+            <textarea id="details" placeholder="Additional Details (e.g., list of items, floor number)" rows="5"></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <!-- Footer (Consistent with index.html) -->
+    <footer class="footer">
+        &copy; 2025 Elephant Packers & Movers. All rights reserved.
+    </footer>
+
+<!-- Toast Notification Container -->
+<div id="toast-notification" class="toast-notification"></div>
+
+</body>
+<script src="js/script.js"></script>
+<script type="module" src="js/app.js"></script>
+</html>

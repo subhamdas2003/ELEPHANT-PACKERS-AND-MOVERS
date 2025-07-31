@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Reviews - Elephant Movers</title>
+    <link rel="stylesheet" href="css/index.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <style>
+.review-form-section {
+    width: 100%;
+    max-width: 600px;
+    margin: 3rem auto;
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.review-form-section h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    color: #022c43;
+}
+
+.review-form-section p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 2rem;
+}
+
+#review-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#customerName,
+#reviewText {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    resize: none;
+    transition: all 0.2s ease-in-out;
+}
+
+#customerName:focus,
+#reviewText:focus {
+    border-color: #004aad;
+    box-shadow: 0 0 5px rgba(0, 74, 173, 0.3);
+    outline: none;
+}
+
+.submit-button {
+    background-color: #ffb100;
+    color: #000;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #ff9900;
+    transform: translateY(-2px);
+}
+
+    </style>
+
+</head>
+<body>
+    <!-- Navigation (You can use your existing navbar solution) -->
+    <div id="navbar-container"></div>
+
+    <main class="section">
+        <!-- Section 1: Display Existing Reviews -->
+        <section class="admin-section" style="width: 100%; max-width: 800px;">
+            <h2>What Our Customers Say</h2>
+            <!-- This container will be filled automatically by app.js -->
+            <div id="reviews-container">
+                <p>Loading reviews...</p>
+            </div>
+        </section>
+
+        <!-- Section 2: Form to Add a New Review -->
+        <section class="admin-section" style="width: 100%; max-width: 800px; margin-top: 2rem;">
+            <h2>Leave Us a Review</h2>
+            <p>Share your experience with us. Your feedback helps us improve!</p>
+            <!-- This form will send data to Firebase via app.js -->
+            <form id="review-form">
+                <input type="text" id="customerName" placeholder="Your Full Name" required>
+                <textarea id="reviewText" placeholder="Write your review here..." rows="5" required></textarea>
+                <button type="submit" class="submit-button">Submit Review</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        &copy; 2025 Elephant Packers & Movers. All rights reserved.
+    </footer>
+
+<!-- Toast Notification Container -->
+<div id="toast-notification" class="toast-notification"></div>
+
+</body>
+<script src="js/script.js"></script>
+<script type="module" src="js/app.js"></script>
+</html>
